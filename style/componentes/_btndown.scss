@@ -1,0 +1,72 @@
+.btn-down {
+    margin-top         :               -1rem;
+    margin-bottom      :               10rem;
+    color              :               $colorThird; 
+
+    display            : 		       inline-block;
+    border             : 		       1px solid;
+    padding            : 		       .5em 1em;
+    border-radius      : 		       .25rem;
+  
+    &:hover {
+    color              :               $colorQuarter;
+    }
+
+    @include from(m) {
+    margin-bottom      :               4rem;
+    }
+
+}
+
+.btn-in {
+    margin-top         :               -1rem;
+    margin-bottom      :               5rem;
+    color              :               $colorSecond; 
+
+    display            : 		       inline-block;
+    border             : 		       1px solid;
+    padding            : 		       .5em 1em;
+    border-radius      : 		       .25rem;
+  
+    &:hover {
+    color              :               yellow;
+    }
+
+    @include from(m) {
+    margin-bottom      :               4rem;
+    }
+}
+
+.btn-in a{
+    color              :               $colorSecond;
+    &:hover {
+    color              :               yellow;
+    }
+}
+
+.btn-in-con {
+    margin-top         :               -1rem;
+    margin-bottom      :               1rem;
+    color              :               $colorSecond; 
+
+    display            : 		       inline-block;
+    border             : 		       1px solid;
+    padding            : 		       .5em 1em;
+    border-radius      : 		       .25rem;
+  
+    &:hover {
+    color              :               $colorSecond;
+    }
+
+    @include from(m) {
+    margin-top         :               1rem;
+    margin-bottom      :               4rem;
+    }
+}
+
+.btn-in-con a{
+    color              :               $colorThird;
+    &:hover{
+    color              :               $colorQuarter;
+    }
+}

@@ -1,0 +1,155 @@
+:root{
+    --fs-infopt     :           .7rem;
+
+    @include from(m) {
+    --fs-infopt     :           1rem;
+    }
+}
+
+//Contacto
+.upcont
+{
+        margin-top: -0;
+        @include from(m)
+        {
+            margin-top: 0;
+        }
+}
+
+.cont {
+    z-index			     : 		  var(--z-normal);
+	color				 :		  $colorFirst;
+    background-color	 :		  $colorSecond; 
+    padding-top 		 :		  1rem;
+    margin-top           :        1rem;
+
+	@include from(m) {
+    margin-top           :        -1rem;
+	padding-top			 :		  1rem;   	
+	}
+}
+
+.cont h1 {
+
+    font-size            :        1.5rem;
+    margin-top			 :		  -5rem;
+
+	@include from(m){
+    font-size            :         2rem;
+    margin-top			 :		   0;
+	}
+}
+
+.espcont
+{
+	@include from(m)
+	{
+		margin-top: 2rem;
+	}
+}
+
+.espform 
+{
+    @include from(m)
+    {
+       
+    }
+}
+
+.contac {
+	--padding           :		    2rem 1rem 3rem;
+	
+	@include from(m) {
+	--padding           :		    1rem;
+	}
+
+    //valores definidos
+	padding             : 		    var(--padding);
+	position            :   		relative; 
+    color               :           $colorSecond;
+    background-color    :           $colorFirst; 
+    padding-top         :           5rem;
+
+    &__content {
+    position            :           relative;
+    }
+
+    @include from(m) {
+        padding-top         :           1rem;
+        }
+}
+
+.contac h1 {
+    font-size           :           1.5rem;
+    margin-top          :           0;
+
+    @include from(m){
+    font-size           :           2rem;
+    margin-top          :           1rem;
+    margin-bottom       :           1rem;
+    }
+}
+
+.introgap-contac {
+    margin-top             :           3rem;
+    height                 :           0;
+    padding-bottom         :           0;
+    position               :           relative;
+
+    > iframe ,
+    video {
+        position            :           absolute;
+        width               :           100%;
+        height              :           100%;
+    }
+
+    @include from(m) {
+    margin-top              :           0;
+    margin-bottom           :           0;
+    }
+
+}
+
+.espenv
+{
+    cursor: pointer;
+}
+
+.especuen
+{
+    margin-top: 1rem;
+    cursor: pointer;
+    @include from(m)
+    {
+        margin-top: 1rem;
+    }
+}
+
+.alturaMensa
+{
+    height: $tamMensaCel;
+    @include from(m)
+    {
+    height: $tamMensa;
+    }
+}
+.ESPmensaje 
+{
+    font-size: $fslinkmenu;
+    color:     $colorThird;
+    border-width: .5px;
+    border-top-color:  $colorQuarter;
+    border-bottom-color:  $colorQuarter;
+    border-left-color:  $colorQuarter;
+    border-right-color:  $colorQuarter;
+    padding: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    float: left;
+    width: 100%;
+    min-height: 100%; 
+    @include from(m)
+    {
+    
+    }
+}

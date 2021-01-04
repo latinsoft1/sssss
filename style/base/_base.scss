@@ -1,0 +1,62 @@
+*, *::before, *::after {
+	box-sizing        		: 			border-box;
+	font-family				: 			'geometria-light';
+	scrollbar-color         :         $colorOver $colorSecond;
+}
+
+body {	
+	background-color		:			$colorSecond; 
+}
+
+a {
+	text-decoration			: 			none;
+	color 					:			$colorThird;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top        		: 			0;
+	margin-bottom			: 			0;
+}
+
+input:not([type]), input[type="text"], input[type="password"], input[type="email"], input[type="url"], 
+input[type="time"], input[type="date"], input[type="datetime"],  
+input[type="datetime-local"], input[type="tel"], input[type="number"], input[type="search"] 
+{
+background-color: transparent;
+border: none;
+border-bottom-color: currentcolor;
+border-bottom-style: none;
+border-bottom-width: medium;
+border-bottom-color: currentcolor;
+border-bottom-style: none;
+border-bottom-width: medium;
+border-bottom: 1px solid $colorQuarter;
+border-radius: 0;
+outline: none;
+height: 3rem;
+width: 100%;
+font-size: 1rem;
+margin: 0 0 20px 0;
+padding: 0;
+box-shadow: none;
+box-sizing: content-box;
+transition: all 0.3s;
+color: $colorThird;
+text-align: center;
+font-family: 'geometria-light';
+}
+
+button, [type="button"], [type="reset"], [type="submit"]
+{
+	background: transparent;
+	border-color: transparent;
+	cursor: pointer;
+	color: $colorThird;
+}
+
+.notifCorrecto
+{
+	color: $colorQuarter;
+	margin-top: 1rem;
+	margin-bottom: 0;
+}

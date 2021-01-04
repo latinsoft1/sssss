@@ -1,0 +1,12 @@
+@mixin from($dm) {
+    @if map-has-key($dimensions, $dm) {
+      @media screen and (min-width : map_get($dimensions, $dm)) {
+        @content;
+      }
+    } @else {
+      @media screen and (min-width : $dm) {
+        @content;
+      }
+    }
+  }
+  
